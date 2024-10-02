@@ -30,7 +30,7 @@ jobs:
           go build -v -o demo-repo-go-binary ./...
 
       - name: Sign artifact
-        uses: actions/attest-build-provenance@v1.4.1
+        uses: actions/attest-build-provenance@v1.4.3
         with:
           subject-path: '${{ github.workspace }}/demo-repo-go-binary'
 
